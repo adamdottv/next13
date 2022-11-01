@@ -1,10 +1,13 @@
-import '@/styles/globals.css';
-import AddressBar from '@/ui/AddressBar';
-import GlobalNav from './GlobalNav';
+import '@/styles/globals.css'
+import AddressBar from '@/ui/AddressBar'
+import GlobalNav from './GlobalNav'
+
+import { Dancing_Script } from '@next/font/google'
+const customFont = Dancing_Script({ weight: '400', subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html>
+    <html className={customFont.className}>
       <head>
         <title>Next.js App Directory Playground</title>
       </head>
@@ -49,5 +52,5 @@ export default function RootLayout({ children }: { children: any }) {
         </div>
       </body>
     </html>
-  );
+  )
 }

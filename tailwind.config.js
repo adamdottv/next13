@@ -1,3 +1,5 @@
+/* const defaultTheme = require('tailwindcss/defaultTheme') */
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      /* fontFamily: { sans: ['Poor Story', ...defaultTheme.fontFamily.sans] }, */
       // https://vercel.com/design/color
       colors: {
         vercel: {
@@ -61,4 +64,4 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/forms')],
-};
+}
